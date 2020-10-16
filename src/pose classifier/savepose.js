@@ -67,7 +67,7 @@ function draw() {
 }
 
 function keyPressed() {
-  if (key != 's') {
+  if (pose && (key != 's')) {
     console.log(pose);
     targetLabel = key;
     let inputs = [];
