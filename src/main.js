@@ -269,14 +269,34 @@ function cmpAngle() {
     // 5초간 유지하세요
     console.log("5s start");
     setTimeout(posechange, 5000);
+    timer(5);
   } else {
     // 3초 후 다시 측정합니다.
     console.log("3s start");
     setTimeout(savePose, 3000);
+    timer(3);
   }
 }
 
 function posechange() {
   console.log("change pose");
   setTimeout(classifyPose, 5000);
+}
+function timer(sec){
+  var time = 0; /* how long the timer runs for */
+  var initialOffset = '440';
+  var i = sec;
+  var j = 1;
+  var interval = setInterval(function () {
+        $('.circle_animation').css('stroke-dashoffset', initialOffset - (j * (initialOffset / sec)));
+        $('.timer').text(i);
+        if (i == 1&&sec==5) {
+          clearInterval(interval);
+        }
+        else if(i == 1&&sec==3){
+          clearInterval(interval);
+        }
+        i--;
+        j++;
+    }, 1000);
 }
