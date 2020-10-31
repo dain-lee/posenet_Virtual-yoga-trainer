@@ -70,10 +70,8 @@ body {
 .relative {
   position: relative;
   float: left;
-<<<<<<< Updated upstream
   top: 400px;
   left: 850px;
-=======
 }
 
 .pose {
@@ -88,8 +86,7 @@ body {
 
 .item {
   top: 400px;
-  left: 800px;
->>>>>>> Stashed changes
+  left: 550px;
 }
 
 .item h2 {
@@ -110,8 +107,10 @@ svg {
   stroke-dashoffset: 660;
   transition: all 1s linear;
 }
+
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 25px 100px;
@@ -123,6 +122,7 @@ svg {
   cursor: pointer;
 
 }
+
 .button4 {
   background-color: white;
   color: black;
