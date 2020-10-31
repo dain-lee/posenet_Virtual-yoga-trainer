@@ -1,0 +1,85 @@
+body {background-color: white;}
+.img-list{
+    margin: 20px auto;
+    width: 80%;
+    height: 150px;
+}
+.yoga-img{
+    max-width:100%;
+    max-height: 100%;
+    margin:auto;
+    align-items:center;
+    display: inline-block;
+}
+.img-box{
+    width: 11.5%;
+    height: 100%;
+    border:2px solid cornflowerblue;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  /* padding: 4% 2%; */
+  box-sizing: border-box;
+  height: 25vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .3s;
+  margin: 0 0.1%;
+  /* box-shadow: 0 20px 30px rgba(0,0,0,.1); */
+  box-shadow: 0 20px 30px rgba(255,77,77,.1);
+  line-height: 0;
+  background-color: white;
+
+}
+
+.box > img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain; 
+  transition: .3s;
+}
+
+.box > span {
+  font-size: 2.0vh;
+  display: block;
+  text-align: center;
+  height: 5vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+    height: 30vh; 
+    flex: 1 1 10%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+    position: relative;
+    float: left;
+}
+
+.item h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+}
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+}
+
