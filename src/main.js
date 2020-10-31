@@ -15,7 +15,8 @@ let trainer = [];
 let state = 'waiting'; //hi
 
 function setup() {
-  createCanvas(832, 624);
+  cnv = createCanvas(832, 624);
+  cnv.position(10, 200);
   video = createCapture(VIDEO);
   video.size(832, 624);
   video.hide();
