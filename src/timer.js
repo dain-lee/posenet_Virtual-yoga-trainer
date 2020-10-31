@@ -7,7 +7,7 @@ var interval = setInterval(function () {
     $('.timer').text(i);
     if (i == 1) {
         clearInterval(interval);
-        setTimeout("$('.timer').text(0)", 1000);
+        setTimeout("$('.timer').text('PASSED')", 1000);
     }
     i--;
     j++;
