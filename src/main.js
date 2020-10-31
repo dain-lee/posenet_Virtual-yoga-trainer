@@ -59,6 +59,7 @@ function classifyReady() {
 }
 
 function classifyPose() {
+  $('.pose-name').text("Select Pose");
   classifyReady();
   if (pose && (state == 'detect')) {
     let inputs = [];
@@ -213,6 +214,7 @@ function cmpAngle() {
   let cmp;
   let pass = true;
   mistake = [];
+  $('.mistake-list').text("");
   for (let i = 0; i < 8; i++) {
     cmp = angle[i] - trainer[i];
     if (Math.abs(cmp) > 30) {
@@ -222,42 +224,42 @@ function cmpAngle() {
       pass = false;
       switch (i) {
         case 0:
-          console.log("왼쪽 무릎");
+          $('.mistake-list').append("왼쪽 무릎 ");
           mistake.push(13);
           break;
         case 1:
-          console.log("오른쪽 무릎");
+          $('.mistake-list').append("오른쪽 무릎 ");
           mistake.push(14);
           break;
         case 2:
-          console.log("왼쪽 상체와 하체");
+          $('.mistake-list').append("왼쪽 상체와 하체 ");
           mistake.push(11);
           break;
         case 3:
-          console.log("오른쪽 상체와 하체");
+          $('.mistake-list').append("오른쪽 상체와 하체 ");
           mistake.push(12);
           break;
         case 4:
-          console.log("왼쪽 팔꿈치");
+          $('.mistake-list').append("왼쪽 팔꿈치 ");
           mistake.push(7);
           break;
         case 5:
-          console.log("오른쪽 팔꿈치");
+          $('.mistake-list').append("오른쪽 팔꿈치 ");
           mistake.push(8);
           break;
         case 6:
-          console.log("왼쪽 팔과 상체");
+          $('.mistake-list').append("왼쪽 팔과 상체 ");
           mistake.push(5);
           break;
         case 7:
-          console.log("오른쪽 팔과 상체");
+          $('.mistake-list').append("오른쪽 팔과 상체 ");
           mistake.push(6);
           break;
       }
       if (cmp > 0) {
-        console.log("더 구부리세요.");
+        $('.mistake-list').append("더 구부리세요.<br>");
       } else {
-        console.log("더 펴세요.");
+        $('.mistake-list').append("더 펴세요.<br>");
       }
     }
   }
