@@ -1,0 +1,43 @@
+body {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.0em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2A2F36;
+
+}
+
+.title {
+    margin-top: 13em;
+    margin-left: 11em;
+    letter-spacing: 0.3em;
+}
+
+.button {
+    margin-top: 3em;
+    margin-left: 20em;
+    width: 5%;
+    /* background-color: white; */
+    border: 3px solid white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
