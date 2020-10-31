@@ -165,11 +165,11 @@ function draw() {
 
   pop();
 
-  fill(255, 0, 255);
+  fill(255);
   noStroke();
-  textSize(100);
+  textSize(50);
   textAlign(CENTER, CENTER);
-  text(state, width / 2, height / 2);
+  text(state, width * 0.85, height * 0.1);
 }
 
 function savePose() {
