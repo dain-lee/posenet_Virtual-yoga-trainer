@@ -60,6 +60,7 @@ function classifyReady() {
 
 function classifyPose() {
   $('.pose-name').text("Select Pose");
+  $('.mistake-list').text("");
   classifyReady();
   if (pose && (state == 'detect')) {
     let inputs = [];
