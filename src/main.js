@@ -12,7 +12,7 @@ let input = [];
 let angle = [];
 let trainer = [];
 
-let state = 'waiting';
+let state = 'waiting'; //hi
 
 function setup() {
   createCanvas(640, 480);
