@@ -292,9 +292,11 @@ function timer(sec){
         $('.timer').text(i);
         if (i == 1&&sec==5) {
           clearInterval(interval);
+          setTimeout("$('.timer').text('PASSED')", 1000);
         }
         else if(i == 1&&sec==3){
           clearInterval(interval);
+          setTimeout("$('.timer').text('TRY AGAIN')", 1000);
         }
         i--;
         j++;
