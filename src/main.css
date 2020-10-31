@@ -70,7 +70,8 @@ body {
 .item {
   position: relative;
   float: left;
-  left: 100px;
+  top: 20px;
+  left: 900px;
 }
 
 .item h2 {
