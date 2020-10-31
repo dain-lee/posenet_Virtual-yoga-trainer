@@ -70,8 +70,8 @@ body {
 .item {
   position: relative;
   float: left;
-  top: 50px;
-  left: 800px;
+  top: 400px;
+  left: 850px;
 }
 
 .item h2 {
@@ -91,4 +91,25 @@ svg {
   /* this value is the pixel circumference of the circle */
   stroke-dashoffset: 660;
   transition: all 1s linear;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 25px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px 0 100px;
+  cursor: pointer;
+
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+
+  margin-top: 100px;
+  border-radius: 6px;
 }
