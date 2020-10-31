@@ -67,11 +67,29 @@ body {
   height: 100%;
 }
 
-.item {
+.relative {
   position: relative;
   float: left;
+<<<<<<< Updated upstream
   top: 400px;
   left: 850px;
+=======
+}
+
+.pose {
+  left: 800px;
+  top: 50px;
+}
+
+.mistake {
+  left: 800px;
+  top: 200px;
+}
+
+.item {
+  top: 400px;
+  left: 800px;
+>>>>>>> Stashed changes
 }
 
 .item h2 {
