@@ -15,10 +15,10 @@ let trainer = [];
 let state = 'waiting'; //hi
 
 function setup() {
-  cnv = createCanvas(832, 624);
-  cnv.position(10, 200);
+  cnv = createCanvas(768, 576);
+  cnv.position(10, 280);
   video = createCapture(VIDEO);
-  video.size(832, 624);
+  video.size(768, 576);
   video.hide();
   poseNet = ml5.poseNet(video, modelLoaded);
   poseNet.on('pose', gotPoses);
