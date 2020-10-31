@@ -2,12 +2,17 @@ body {
   background-color: white;
 }
 
-h2 {
-  margin: 0;
+h1 {
+  font-size: 4em;
 }
 
-.relative {
-  position: relative;
+h2 {
+  margin: 0;
+  line-height: 130%;
+}
+
+.fixed {
+  position: fixed;
   float: left;
 }
 
@@ -77,27 +82,33 @@ h2 {
 }
 
 .pose {
-  left: 800px;
-  top: 50px;
+  left: 900px;
+  top: 210px;
 }
 
 .mistake {
-  left: 610px;
-  top: 130px;
-  width: 500px;
-  height: 300px;
+  left: 850px;
+  top: 350px;
+  width: 600px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.mistake-list {
+  padding: 5px;
 }
 
 .item {
-  top: 400px;
-  left: 120px;
+  top: 620px;
+  left: 850px;
 }
 
-.item h2 {
-  text-align: center;
+.timer {
   position: absolute;
   line-height: 190px;
   width: 100%;
+  top: 20px;
+  left: 110px;
 }
 
 svg {
@@ -117,21 +128,20 @@ svg {
   /* Green */
   border: none;
   color: white;
-  padding: 25px 100px;
+  padding: 25px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px 0 100px;
+  margin: 0 2px 0 100px;
   cursor: pointer;
-
+  position: fixed;
+  top: 700px;
 }
 
 .button4 {
   background-color: white;
   color: black;
   border: 2px solid #008CBA;
-
-  margin-top: 100px;
   border-radius: 6px;
 }
