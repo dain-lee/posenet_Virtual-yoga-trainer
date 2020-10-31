@@ -43,7 +43,7 @@ function brainLoaded() {
 }
 
 function classifyReady() {
-  state='waiting'
+  state = 'waiting'
   if (pose) {
     let nose = pose.keypoints[0].score;
     let ankleR = pose.keypoints[14].score;
@@ -68,8 +68,7 @@ function classifyPose() {
       inputs.push(y);
     }
     brain.classify(inputs, gotResult);
-  } 
-  else {
+  } else {
     setTimeout(classifyPose, 100);
   }
 }
@@ -108,8 +107,8 @@ function gotResult(error, results) {
           n = 7;
           break;
       }
-    console.log("n:"+n);
-    console.log(String(poseLabel));
+      console.log("n:" + n);
+      console.log(String(poseLabel));
       for (let i = 0; i < 8; i++) {
         trainer[i] = data[n][i];
       }
@@ -158,7 +157,7 @@ function draw() {
       stroke(255);
       ellipse(x, y, 16, 16);
       if (mistake.includes(i)) {
-        fill(255, 0 , 0);
+        fill(255, 0, 0);
         ellipse(x, y, 20, 20);
       }
     }
@@ -258,8 +257,7 @@ function cmpAngle() {
     // 5초간 유지하세요
     console.log("5s start");
     setTimeout(posechange, 5000);
-  } 
-  else {
+  } else {
     // 3초 후 다시 측정합니다.
     console.log("3s start");
     setTimeout(savePose, 3000);
