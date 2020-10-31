@@ -82,11 +82,13 @@ body {
 .mistake {
   left: 610px;
   top: 130px;
+  width: 500px;
+  height: 300px;
 }
 
 .item {
   top: 400px;
-  left: 600px;
+  left: 120px;
 }
 
 .item h2 {
