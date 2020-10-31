@@ -1,9 +1,16 @@
 body {
   background-color: white;
 }
-
+h1{
+  font-family: 'Playfair Display', serif;
+  margin-left:20px;
+  font-size: 4em;
+}
 h2 {
   margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 130%;
+
 }
 
 .relative {
@@ -77,20 +84,20 @@ h2 {
 }
 
 .pose {
-  left: 800px;
-  top: 50px;
+  left: 900px;
+  /* top: 10px; */
 }
 
 .mistake {
-  left: 610px;
-  top: 130px;
+  left: 450px;
+  top: 150px;
   width: 500px;
   height: 300px;
 }
 
 .item {
   top: 400px;
-  left: 120px;
+  left: 20px;
 }
 
 .item h2 {
@@ -130,7 +137,7 @@ svg {
 .button4 {
   background-color: white;
   color: black;
-  border: 2px solid #008CBA;
+  border: 4px solid #008CBA;
 
   margin-top: 100px;
   border-radius: 6px;
