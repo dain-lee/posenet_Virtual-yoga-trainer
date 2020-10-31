@@ -85,27 +85,35 @@ function gotResult(error, results) {
       switch (String(poseLabel)) {
         case '0':
           n = 0;
+          $('.pose-name').text("Mediation");
           break;
         case '1':
           n = 1;
+          $('.pose-name').text("Mountain Pose");
           break;
         case '2':
           n = 2;
+          $('.pose-name').text("Tree Pose");
           break;
         case '3':
           n = 3;
+          $('.pose-name').text("Warrior Pose");
           break;
         case '4':
           n = 4;
+          $('.pose-name').text("Goddess Pose");
           break;
         case '5':
           n = 5;
+          $('.pose-name').text("Chair Pose");
           break;
         case '6':
           n = 6;
+          $('.pose-name').text("Prayer Squat Pose");
           break;
         case '7':
           n = 7;
+          $('.pose-name').text("Half Squat Pose");
           break;
       }
       console.log("n:" + n);
