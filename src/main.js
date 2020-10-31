@@ -249,7 +249,7 @@ function cmpAngle() {
       if (cmp > 0) {
         console.log("더 구부리세요.");
       } else {
-        console.log("더 펴세요."); //더 펴세요
+        console.log("더 펴세요.");
       }
     }
   }
