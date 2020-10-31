@@ -149,9 +149,6 @@ function draw() {
       let b = skeleton[i][1];
       strokeWeight(2);
       stroke(0);
-      // if (mistake.includes(i)) {
-      //   stroke(255,0,0);
-      // }
       line(a.position.x, a.position.y, b.position.x, b.position.y);
     }
     for (let i = 0; i < pose.keypoints.length; i++) {
