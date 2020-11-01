@@ -16,7 +16,7 @@ let state = 'waiting'; //hi
 
 function setup() {
   cnv = createCanvas(768, 576);
-  cnv.position(10, 280);
+  cnv.position(20, 280);
   video = createCapture(VIDEO);
   video.size(768, 576);
   video.hide();
@@ -179,9 +179,9 @@ function draw() {
 
   pop();
 
-  fill(255);
+  fill(255,204,0);
   noStroke();
-  textSize(50);
+  textSize(60);
   textAlign(CENTER, CENTER);
   text(state, width * 0.85, height * 0.1);
 }
