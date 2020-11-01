@@ -62,6 +62,7 @@ function classifyReady() {
 function classifyPose() {
   $('.pose-name').text("Select Pose");
   $('.timer').text("Ready");
+  $('.box:eq(' + n + ')').removeClass('box-hover');
   classifyReady();
   if (pose && (state == 'detect')) {
     let inputs = [];
@@ -119,6 +120,7 @@ function gotResult(error, results) {
           $('.pose-name').text("Half Squat Pose");
           break;
       }
+      $('.box:eq(' + n + ')').addClass('box-hover');
       console.log("n:" + n);
       console.log(String(poseLabel));
       for (let i = 0; i < 8; i++) {
