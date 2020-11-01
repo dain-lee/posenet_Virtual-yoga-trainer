@@ -304,8 +304,5 @@ function timer(sec){
         }
         i--;
         j++;
-        if(i==0){
-          $('.circle_animation').css('stroke-dashoffset', 660);
-        }
     }, 1000);
 }
