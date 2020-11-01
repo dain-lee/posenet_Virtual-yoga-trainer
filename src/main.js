@@ -16,7 +16,7 @@ let state = 'waiting'; //hi
 
 function setup() {
   cnv = createCanvas(768, 576);
-  cnv.position(20, 280);
+  cnv.position(20, 278);
   video = createCapture(VIDEO);
   video.size(768, 576);
   video.hide();
