@@ -1,6 +1,5 @@
 body {
-  background-color: #f7fbfc;
-  overflow:hidden;
+  background-color:	whitesmoke;
 }
 
 h1{
@@ -64,7 +63,7 @@ h2 {
 }
 
 .box>img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
   transition: .3s;
@@ -78,14 +77,9 @@ h2 {
   line-height: 2.6;
 }
 
-.box:hover {
+.box-hover {
   height: 30vh;
   flex: 1 1 10%;
-}
-
-.box:hover>img {
-  width: 100%;
-  height: 100%;
 }
 
 .pose {
