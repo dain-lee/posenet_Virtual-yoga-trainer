@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #f7fbfc;
 }
 
 h1{
@@ -56,14 +56,18 @@ h2 {
   transition: .3s;
   margin: 0 0.1%;
   /* box-shadow: 0 20px 30px rgba(0,0,0,.1); */
+<<<<<<< HEAD
   box-shadow: 3px 10px 0px rgba(255,204,0, .8);
+=======
+  box-shadow: 10px 10px 0px rgba(185, 215, 234, .5);
+>>>>>>> 5d869afe817cce664e5ea42a9ec538341bfb4d00
   line-height: 0;
   background-color: white;
 
 }
 
 .box>img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
   transition: .3s;
@@ -77,19 +81,14 @@ h2 {
   line-height: 2.6;
 }
 
-.box:hover {
+.box-hover {
   height: 30vh;
   flex: 1 1 10%;
 }
 
-.box:hover>img {
-  width: 100%;
-  height: 100%;
-}
-
 .pose {
   left: 900px;
-  top: 210px;
+  top: 220px;
 }
 
 .mistake {
@@ -97,8 +96,12 @@ h2 {
   top: 350px;
   width: 600px;
   height: 250px;
+<<<<<<< HEAD
   border: 4px solid #ffcc00;
   background-color: white;
+=======
+  border: 2.3px solid #b9d7ea;
+>>>>>>> 5d869afe817cce664e5ea42a9ec538341bfb4d00
 }
 
 .mistake-list {
