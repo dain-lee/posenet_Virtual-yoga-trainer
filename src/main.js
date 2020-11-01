@@ -61,6 +61,7 @@ function classifyReady() {
 
 function classifyPose() {
   $('.pose-name').text("Select Pose");
+  $('.timer').text("Ready");
   classifyReady();
   if (pose && (state == 'detect')) {
     let inputs = [];
@@ -282,11 +283,12 @@ function posechange() {
   console.log("change pose");
   setTimeout(classifyPose, 5000);
 }
+
 function timer(sec){
   var time = 0; /* how long the timer runs for */
-  var initialOffset = '440';
   var i = sec;
   var j = 1;
+  var initialOffset = '440';
   var interval = setInterval(function () {
         $('.circle_animation').css('stroke-dashoffset', initialOffset - (j * (initialOffset / sec)));
         $('.timer').text(i);
@@ -296,9 +298,12 @@ function timer(sec){
         }
         else if(i == 1&&sec==3){
           clearInterval(interval);
-          setTimeout("$('.timer').text('TRY AGAIN')", 1000);
+          setTimeout("$('.timer').text('TRY AGAIN')", 1000);  
         }
         i--;
         j++;
+        if(i==0){
+          $('.circle_animation').css('stroke-dashoffset', 660);
+        }
     }, 1000);
 }
