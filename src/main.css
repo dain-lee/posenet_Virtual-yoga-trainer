@@ -90,7 +90,7 @@ h2 {
 
 .pose {
   left : 850px;
-  top: 220px;
+  top: 210px;
 }
 
 .mistake {
@@ -115,7 +115,8 @@ h2 {
   position: absolute;
   line-height: 190px;
   width: 100%;
-  top: 20px;
+  top: 1px;
+  left: 0px;
 }
 
 svg {
@@ -153,7 +154,10 @@ svg {
   border-radius: 6px;
   font-size: larger;
 }
-
+.timer-box{
+  width: 210px;
+  height: 210px;
+}
 canvas{
   border: 5px solid  #ffcc00;
 }
