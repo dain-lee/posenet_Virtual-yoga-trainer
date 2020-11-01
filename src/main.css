@@ -12,6 +12,7 @@ h2 {
   margin: 0;
   font-family: 'Nanum Gothic', sans-serif;
   line-height: 130%;
+  text-align: center;
 }
 
 .fixed {
@@ -111,7 +112,6 @@ h2 {
   line-height: 190px;
   width: 100%;
   top: 20px;
-  left: 110px;
 }
 
 svg {
